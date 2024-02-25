@@ -1,0 +1,2 @@
+def hid(wholeques):
+    pass
