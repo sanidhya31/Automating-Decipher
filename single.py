@@ -1,12 +1,14 @@
 from MiscFunctions import removeDelimiter, rowLabelCheck
 
 def radio(wholeques):
+    radio_str=''
     val_rowLabelCheck,val_OE,val_exc =rowLabelCheck(wholeques)
     first_line=True
     counter_for_row_label=0
     # For example: wholeques = ['Q1 What is your company Name?', '1. Google.', '2. Apple.', '3. Microsoft.', '4. Samsung.', '5. Other.', '99. dk']
     for eachline in wholeques:
         eachline = eachline.split(' ')
+        print (eachline)
         # ['Q1', 'What', 'is', 'your', 'company', 'Name?']
         # ['1.', 'Google.']
         # ['2.', 'Apple.']

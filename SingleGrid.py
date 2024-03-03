@@ -73,5 +73,5 @@ def single_grid(wholeques):
         elif val_colLabelCheck == 3:  # no label found for these rows
             single_grid_str += '<col label="c{}" {}>{}</col>\n'.format(counter_for_col_label, attrs, ' '.join(eachline))
 
-    single_grid_str += '</radio>\n</suspend>\n\n'
+    single_grid_str += '</radio>\n<suspend/>\n\n'
     return single_grid_str
