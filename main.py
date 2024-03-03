@@ -19,7 +19,7 @@ with open(input_file_path, 'r') as file:
 
 final_str = ''
 paragraphs = ''.join(paragraphs).split('\n') #removes the line breaks from the pulled text
-
+print (paragraphs)
 
 temp_ar=[]
 extra_run_for_grid=True

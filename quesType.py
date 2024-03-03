@@ -7,6 +7,8 @@ from single import radio
 from MultiGrid import multi_grid
 from rank import ques_rank
 from SingleGrid import single_grid
+from dropdown import ques_dropdown
+from hidden import ques_hid
 
 quesDictionary = {
     "checkbox": ['[ch]', '[c]', '[cx]'],
@@ -15,7 +17,9 @@ quesDictionary = {
     "ques_text": ['[text]', '[txt]', '[TXT]'],
     "single_grid": ['[ssg]', '[SSG]', '[SSGrid]','[SG]','[sg]'],
     "multi_grid": ['[msg]', '[MSG]', '[MSGrid]','[MG]','[mg]'],
-    "ques_rank": ['[rank]', '[Rank]', '[rk]','[RK]']
+    "ques_rank": ['[rank]', '[Rank]', '[rk]','[RK]'],
+    "ques_dropdown": ['[dd]', '[dp]', '[dropdown]','[dn]'],
+    "ques_hid": ['[hid]', '[hs]', '[hid-single]']
 }
 
 
