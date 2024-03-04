@@ -1,4 +1,5 @@
 from quesType import typeOfQues
+from preFormat import initial_Format
 
 
 #Path to the input txt file
@@ -19,7 +20,7 @@ with open(input_file_path, 'r') as file:
 
 final_str = ''
 paragraphs = ''.join(paragraphs).split('\n') #removes the line breaks from the pulled text
-print (paragraphs)
+paragraphs = initial_Format(paragraphs)
 
 temp_ar=[]
 extra_run_for_grid=True

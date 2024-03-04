@@ -1,5 +1,5 @@
 from MiscFunctions import removeDelimiter, rowLabelCheck
-
+from tsCheck import check_for_term_and_shuffle
 def radio(wholeques):
     radio_str=''
     val_rowLabelCheck,val_OE,val_exc =rowLabelCheck(wholeques)
@@ -8,7 +8,6 @@ def radio(wholeques):
     # For example: wholeques = ['Q1 What is your company Name?', '1. Google.', '2. Apple.', '3. Microsoft.', '4. Samsung.', '5. Other.', '99. dk']
     for eachline in wholeques:
         eachline = eachline.split(' ')
-        print (eachline)
         # ['Q1', 'What', 'is', 'your', 'company', 'Name?']
         # ['1.', 'Google.']
         # ['2.', 'Apple.']
